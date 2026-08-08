@@ -82,7 +82,7 @@ jobs:
         # Pinned to a full commit SHA, not a tag. A tag is mutable: whoever
         # controls the action repo can repoint v3 at new code, which is the same
         # class of compromise as a poisoned npm package. Bump deliberately.
-        uses: dopplerhq/cli-action@014df23b1329b615816a38eb5f473bb9000700b1 # v3
+        uses: dopplerhq/cli-action@4819d808ab99e5cde19a0637a16536a4038fad73 # v4.0.1
       - name: Build (Doppler)
         if: env.DOPPLER_TOKEN != ''
         run: doppler run -- npm run build
