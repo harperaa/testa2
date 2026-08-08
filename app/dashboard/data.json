@@ -1,0 +1,632 @@
+[
+  {
+    "id": 1,
+    "header": "Oatmeal with berries",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "320",
+    "limit": "350",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 2,
+    "header": "Greek yogurt + honey",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "180",
+    "limit": "200",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 3,
+    "header": "Grilled chicken bowl",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "620",
+    "limit": "650",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 4,
+    "header": "Protein shake",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "210",
+    "limit": "250",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 5,
+    "header": "Salmon and quinoa",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "540",
+    "limit": "600",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 6,
+    "header": "Apple and almond butter",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "190",
+    "limit": "200",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 7,
+    "header": "Veggie omelette",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "380",
+    "limit": "400",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 8,
+    "header": "Turkey wrap",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "510",
+    "limit": "550",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 9,
+    "header": "Cottage cheese cup",
+    "type": "Snack",
+    "status": "Pending",
+    "target": "150",
+    "limit": "180",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 10,
+    "header": "Lean beef stir-fry",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "680",
+    "limit": "700",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 11,
+    "header": "Morning run 5K",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "420",
+    "limit": "400",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 12,
+    "header": "Upper body strength",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "280",
+    "limit": "300",
+    "reviewer": "Strength"
+  },
+  {
+    "id": 13,
+    "header": "Evening walk",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "160",
+    "limit": "150",
+    "reviewer": "Steps"
+  },
+  {
+    "id": 14,
+    "header": "HIIT session",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "390",
+    "limit": "350",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 15,
+    "header": "Yoga flow",
+    "type": "Workout",
+    "status": "Pending",
+    "target": "120",
+    "limit": "100",
+    "reviewer": "Recovery"
+  },
+  {
+    "id": 16,
+    "header": "Avocado toast + eggs",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "480",
+    "limit": "450",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 17,
+    "header": "Chicken Caesar salad",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "540",
+    "limit": "550",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 18,
+    "header": "Rice cakes + PB",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "220",
+    "limit": "200",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 19,
+    "header": "Shrimp tacos",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "590",
+    "limit": "620",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 20,
+    "header": "Banana pre-workout",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "105",
+    "limit": "120",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 21,
+    "header": "Cycling commute",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "310",
+    "limit": "280",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 22,
+    "header": "Legs day",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "340",
+    "limit": "320",
+    "reviewer": "Strength"
+  },
+  {
+    "id": 23,
+    "header": "Overnight oats",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "360",
+    "limit": "350",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 24,
+    "header": "Tuna poke bowl",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "580",
+    "limit": "600",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 25,
+    "header": "Dark chocolate square",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "90",
+    "limit": "100",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 26,
+    "header": "Turkey chili",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "520",
+    "limit": "550",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 27,
+    "header": "Swimming laps",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "450",
+    "limit": "400",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 28,
+    "header": "Core circuit",
+    "type": "Workout",
+    "status": "Pending",
+    "target": "140",
+    "limit": "120",
+    "reviewer": "Strength"
+  },
+  {
+    "id": 29,
+    "header": "Smoothie bowl",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "410",
+    "limit": "400",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 30,
+    "header": "Burrito bowl",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "710",
+    "limit": "700",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 31,
+    "header": "String cheese",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "80",
+    "limit": "100",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 32,
+    "header": "Baked cod + veggies",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "430",
+    "limit": "500",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 33,
+    "header": "Trail mix handful",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "200",
+    "limit": "180",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 34,
+    "header": "Rowing machine",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "360",
+    "limit": "330",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 35,
+    "header": "Full-body dumbbells",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "300",
+    "limit": "290",
+    "reviewer": "Strength"
+  },
+  {
+    "id": 36,
+    "header": "Egg white scramble",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "290",
+    "limit": "320",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 37,
+    "header": "Sushi set",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "640",
+    "limit": "650",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 38,
+    "header": "Protein bar",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "200",
+    "limit": "200",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 39,
+    "header": "Chicken pasta light",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "610",
+    "limit": "620",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 40,
+    "header": "Stair climb",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "220",
+    "limit": "200",
+    "reviewer": "Steps"
+  },
+  {
+    "id": 41,
+    "header": "Pilates class",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "180",
+    "limit": "160",
+    "reviewer": "Recovery"
+  },
+  {
+    "id": 42,
+    "header": "Bagel with cream cheese",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "450",
+    "limit": "400",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 43,
+    "header": "Mediterranean plate",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "560",
+    "limit": "580",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 44,
+    "header": "Carrot sticks + hummus",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "140",
+    "limit": "150",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 45,
+    "header": "Steak and sweet potato",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "720",
+    "limit": "700",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 46,
+    "header": "Basketball pickup",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "480",
+    "limit": "450",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 47,
+    "header": "Pull-up session",
+    "type": "Workout",
+    "status": "Pending",
+    "target": "160",
+    "limit": "150",
+    "reviewer": "Strength"
+  },
+  {
+    "id": 48,
+    "header": "Chia pudding",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "330",
+    "limit": "340",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 49,
+    "header": "Grilled fish tacos",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "530",
+    "limit": "550",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 50,
+    "header": "Kefir drink",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "110",
+    "limit": "120",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 51,
+    "header": "Lentil soup + bread",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "490",
+    "limit": "520",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 52,
+    "header": "Elliptical 30 min",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "270",
+    "limit": "250",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 53,
+    "header": "Mobility work",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "90",
+    "limit": "80",
+    "reviewer": "Recovery"
+  },
+  {
+    "id": 54,
+    "header": "Pancakes (light)",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "520",
+    "limit": "500",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 55,
+    "header": "Chicken noodle soup",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "400",
+    "limit": "450",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 56,
+    "header": "Rice cake + jam",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "130",
+    "limit": "140",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 57,
+    "header": "Veggie pizza slice",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "350",
+    "limit": "400",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 58,
+    "header": "Sprint intervals",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "410",
+    "limit": "380",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 59,
+    "header": "Deadlift day",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "320",
+    "limit": "310",
+    "reviewer": "Strength"
+  },
+  {
+    "id": 60,
+    "header": "Fruit parfait",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "300",
+    "limit": "320",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 61,
+    "header": "Quinoa salad",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "480",
+    "limit": "500",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 62,
+    "header": "Hard-boiled eggs x2",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "140",
+    "limit": "150",
+    "reviewer": "Afternoon"
+  },
+  {
+    "id": 63,
+    "header": "Tofu stir-fry",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "470",
+    "limit": "500",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 64,
+    "header": "Hike 4 miles",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "520",
+    "limit": "480",
+    "reviewer": "Cardio"
+  },
+  {
+    "id": 65,
+    "header": "Resistance bands",
+    "type": "Workout",
+    "status": "Logged",
+    "target": "150",
+    "limit": "140",
+    "reviewer": "Strength"
+  },
+  {
+    "id": 66,
+    "header": "Omelette wrap",
+    "type": "Breakfast",
+    "status": "Logged",
+    "target": "390",
+    "limit": "400",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 67,
+    "header": "BLT light",
+    "type": "Lunch",
+    "status": "Logged",
+    "target": "550",
+    "limit": "560",
+    "reviewer": "Midday"
+  },
+  {
+    "id": 68,
+    "header": "Greek yogurt plain",
+    "type": "Snack",
+    "status": "Logged",
+    "target": "100",
+    "limit": "120",
+    "reviewer": "Morning"
+  },
+  {
+    "id": 69,
+    "header": "Roasted chicken plate",
+    "type": "Dinner",
+    "status": "Logged",
+    "target": "600",
+    "limit": "620",
+    "reviewer": "Evening"
+  },
+  {
+    "id": 70,
+    "header": "Jump rope",
+    "type": "Workout",
+    "status": "Pending",
+    "target": "200",
+    "limit": "180",
+    "reviewer": "Cardio"
+  }
+]

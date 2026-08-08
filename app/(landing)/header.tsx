@@ -16,6 +16,10 @@ import { useTheme } from "next-themes"
 
 
 const menuItems: { name: string; href: string }[] = [
+    { name: 'Features', href: '/#features' },
+    { name: 'About', href: '/#about' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Pricing', href: '/#pricing' },
     // modules:nav — content modules add their links here; add your own pages too
 ]
 
@@ -53,7 +57,7 @@ export const HeroHeader = () => {
                                 aria-label="home"
                                 className="flex items-center space-x-2">
                                 <ChatMaxingIconColoured />
-                                <span className="text-xl font-medium">{process.env.NEXT_PUBLIC_SITE_NAME || 'More Secure Starter'}</span>
+                                <span className="text-xl font-medium">{process.env.NEXT_PUBLIC_SITE_NAME || 'Grok Fit'}</span>
                             </Link>
 
                             <button

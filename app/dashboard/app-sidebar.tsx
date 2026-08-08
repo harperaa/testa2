@@ -2,24 +2,17 @@
 
 import * as React from "react"
 import {
-  IconCamera,
   IconChartBar,
   IconDashboard,
   IconDatabase,
-  IconMessageCircle,
-  IconFileAi,
-  IconFileDescription,
-  IconFileWord,
-  IconFolder,
   IconHelp,
-  IconInnerShadowTop,
   IconListDetails,
   IconReport,
   IconSearch,
   IconSettings,
-  IconUsers,
-  IconBrandOpenai,
   IconShieldCheck,
+  IconSparkles,
+  IconTargetArrow,
 } from "@tabler/icons-react"
 
 import { NavDocuments } from "@/app/dashboard/nav-documents"
@@ -45,87 +38,88 @@ import { api } from "@/convex/_generated/api"
 import { usePathname, useRouter } from "next/navigation"
 
 const data = {
-  // Main navigation items (visible to all users)
   navMain: [
     {
       title: "Dashboard",
       url: "/dashboard",
       icon: IconDashboard,
     },
-    // modules:nav — content modules add their links here; add your own pages too
+    {
+      title: "Log",
+      url: "/dashboard/log",
+      icon: IconListDetails,
+    },
+    {
+      title: "Progress",
+      url: "/dashboard/progress",
+      icon: IconChartBar,
+    },
+    {
+      title: "Pro insights",
+      url: "/dashboard/payment-gated",
+      icon: IconSparkles,
+    },
   ],
-  // Admin-only navigation items
   navAdmin: [
     {
       title: "Security Monitoring",
       url: "/dashboard/security",
       icon: IconShieldCheck,
     },
-    {
-      title: "User Management",
-      url: "#",
-      icon: IconUsers,
-    },
   ],
   navSecondary: [
     {
       title: "Settings",
-      url: "#",
+      url: "/dashboard/settings",
       icon: IconSettings,
     },
     {
       title: "Get Help",
-      url: "#",
+      url: "/dashboard/help",
       icon: IconHelp,
     },
     {
       title: "Search",
-      url: "#",
+      url: "/dashboard/search",
       icon: IconSearch,
     },
   ],
   documents: [
     {
-      name: "Data Library",
-      url: "#",
+      name: "Food library",
+      url: "/dashboard/library",
       icon: IconDatabase,
     },
     {
-      name: "Reports",
-      url: "#",
+      name: "Weekly reports",
+      url: "/dashboard/reports",
       icon: IconReport,
     },
     {
-      name: "Word Assistant",
-      url: "#",
-      icon: IconFileWord,
+      name: "Goal settings",
+      url: "/dashboard/settings",
+      icon: IconTargetArrow,
     },
   ],
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const isAdmin = useQuery(api.users.checkIsAdmin);
-  const pathname = usePathname();
-  const router = useRouter();
+  const isAdmin = useQuery(api.users.checkIsAdmin)
+  const pathname = usePathname()
+  const router = useRouter()
 
-  // Query security summary for badge - only if admin
   const securitySummary = useQuery(
     api.security.getSecuritySummary,
     isAdmin ? {} : "skip"
-  );
+  )
 
-  const handleAdminNavigation = (url: string) => {
-    router.push(url);
-  };
-
-  // Determine badge color based on severity
   const getBadgeVariant = () => {
-    if (!securitySummary) return "secondary";
-    if (securitySummary.criticalCount > 0) return "destructive";
-    if (securitySummary.highCount > 0) return "destructive";
-    if (securitySummary.mediumCount > 0) return "default";
-    return "secondary";
-  };
+    if (!securitySummary) return "secondary"
+    if (securitySummary.criticalCount > 0) return "destructive"
+    if (securitySummary.highCount > 0) return "destructive"
+    if (securitySummary.mediumCount > 0) return "default"
+    return "secondary"
+  }
 
   return (
     <Sidebar collapsible="offcanvas" {...props}>
@@ -138,7 +132,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <Link href="/">
                 <ChatMaxingIconColoured className="!size-6" />
-                <span className="text-base font-semibold">{process.env.NEXT_PUBLIC_SITE_NAME || 'More Secure Starter'}</span>
+                <span className="text-base font-semibold">
+                  {process.env.NEXT_PUBLIC_SITE_NAME || "Grok Fit"}
+                </span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -146,22 +142,21 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        {/* Administration section - only visible to admin */}
         {isAdmin && (
           <SidebarGroup>
             <SidebarGroupLabel>Administration</SidebarGroupLabel>
             <SidebarMenu>
               {data.navAdmin.map((item) => {
-                const isActive = pathname === item.url;
-                const isSecurityItem = item.url === "/dashboard/security";
-                const unreadCount = securitySummary?.unreadCount ?? 0;
+                const isActive = pathname === item.url
+                const isSecurityItem = item.url === "/dashboard/security"
+                const unreadCount = securitySummary?.unreadCount ?? 0
 
                 return (
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton
                       tooltip={item.title}
                       isActive={isActive}
-                      onClick={() => handleAdminNavigation(item.url)}
+                      onClick={() => router.push(item.url)}
                     >
                       {item.icon && <item.icon />}
                       <span>{item.title}</span>
@@ -175,7 +170,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                       )}
                     </SidebarMenuButton>
                   </SidebarMenuItem>
-                );
+                )
               })}
             </SidebarMenu>
           </SidebarGroup>

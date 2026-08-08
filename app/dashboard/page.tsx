@@ -1,26 +1,44 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+"use client"
+
+import { TodayBalance } from "./today-balance"
+import { WeeklyEnergyChart } from "./weekly-energy-chart"
+import { MealLog } from "./meal-log"
+import { FitnessGoalBanner } from "./fitness-goal-banner"
+import { useFitnessDashboard } from "./use-fitness-dashboard"
 
 export default function Page() {
+  const { date, dashboard, loading } = useFitnessDashboard()
+
   return (
-    <div className="flex flex-1 flex-col items-center justify-center p-6">
-      <Card className="w-full max-w-lg">
-        <CardHeader>
-          <CardTitle>Welcome to your dashboard</CardTitle>
-          <CardDescription>
-            This page is intentionally blank — build your app here.
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="text-muted-foreground text-sm">
-          Want a working example? Install the sample dashboard (KPI cards,
-          chart, and data table) with /add-module dashboard-sample.
-        </CardContent>
-      </Card>
+    <div className="flex flex-col gap-4 px-4 lg:px-6">
+      <div className="grid gap-4 lg:grid-cols-2">
+        <TodayBalance
+          loading={loading}
+          caloriesIn={dashboard?.caloriesIn}
+          caloriesOut={dashboard?.caloriesOut}
+          net={dashboard?.net}
+          dailyCalorieTarget={dashboard?.dailyCalorieTarget}
+          goalProgressPct={dashboard?.goalProgressPct}
+        />
+        <WeeklyEnergyChart
+          loading={loading}
+          data={dashboard?.weekBalances}
+        />
+        <MealLog
+          loading={loading}
+          date={date}
+          entries={dashboard?.todayEntries}
+        />
+        <FitnessGoalBanner
+          loading={loading}
+          goalTitle={dashboard?.profile?.goalTitle}
+          goalType={dashboard?.profile?.goalType}
+          weightProgressPct={dashboard?.weightProgressPct}
+          weightLostKg={dashboard?.weightLostKg}
+          streakDays={dashboard?.profile?.streakDays}
+          weekAvgBalance={dashboard?.weekAvgBalance}
+        />
+      </div>
     </div>
   )
 }

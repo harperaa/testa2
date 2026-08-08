@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: process.env.NEXT_PUBLIC_SITE_NAME || "More Secure Starter",
-  description: process.env.NEXT_PUBLIC_SITE_NAME ||"A production-ready SaaS starter with Next.js 15, Clerk, Convex, and comprehensive security features",
+  title: process.env.NEXT_PUBLIC_SITE_NAME || "Grok Fit",
+  description: "Grok Fit helps you track calories in and calories out, stay on energy balance, and hit your fitness goals.",
 };
 
 export default function RootLayout({

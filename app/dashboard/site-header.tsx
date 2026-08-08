@@ -5,15 +5,17 @@ import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 
 function getPageTitle(pathname: string): string {
-  // Handle exact matches first
-  switch (pathname) {
-    case "/dashboard":
-      return "Dashboard"
-    case "/dashboard/payment-gated":
-      return "Payment gated"
-    default:
-      return "Page"
-  }
+  if (pathname === "/dashboard") return "Dashboard"
+  if (pathname.startsWith("/dashboard/log")) return "Log"
+  if (pathname.startsWith("/dashboard/progress")) return "Progress"
+  if (pathname.startsWith("/dashboard/payment-gated")) return "Pro insights"
+  if (pathname.startsWith("/dashboard/settings")) return "Settings"
+  if (pathname.startsWith("/dashboard/library")) return "Food library"
+  if (pathname.startsWith("/dashboard/reports")) return "Weekly reports"
+  if (pathname.startsWith("/dashboard/help")) return "Help"
+  if (pathname.startsWith("/dashboard/search")) return "Search"
+  if (pathname.startsWith("/dashboard/security")) return "Security Monitoring"
+  return "Grok Fit"
 }
 
 export function SiteHeader() {

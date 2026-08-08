@@ -1,20 +1,31 @@
-import { HeroHeader } from "./header";
+import HeroSection from "./hero-section";
+import SecurityMonitoring from "./security-monitoring";
+import Testimonials from "./testimonials";
+import CallToAction from "./call-to-action";
+import FAQs from "./faqs";
+import Footer from "./footer";
 // modules:imports
+import CustomClerkPricing from "@/components/custom-clerk-pricing";
 
 export default function Home() {
   return (
     <div>
-      <HeroHeader />
-      <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        <h1 className="text-4xl font-semibold lg:text-5xl">
-          {process.env.NEXT_PUBLIC_SITE_NAME || 'Secure Vibe Coding OS'}
-        </h1>
-        <p className="text-muted-foreground mt-4 max-w-xl">
-          Your secure foundation is running. Sign in to get started, or add
-          content modules with /add-module.
-        </p>
-      </main>
+      <HeroSection />
+      <SecurityMonitoring />
+      <section id="pricing" className="bg-muted/50 py-12 md:py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-8 mx-auto max-w-2xl space-y-4 text-center">
+            <h1 className="text-center text-4xl font-semibold lg:text-5xl">Simple plans for serious progress</h1>
+            <p className="text-muted-foreground">Start free, then unlock deeper insights, custom goals, and advanced logging when you are ready to level up with Grok Fit.</p>
+          </div>
+          <CustomClerkPricing />
+        </div>
+      </section>
       {/* modules:sections */}
+      <Testimonials />
+      <CallToAction />
+      <FAQs />
+      <Footer />
     </div>
   );
 }
